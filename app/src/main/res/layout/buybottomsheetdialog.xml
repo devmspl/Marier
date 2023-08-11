@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/onesideroundcorner"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/interregular"
+        android:gravity="center"
+        android:text="Buy Coins"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter number of coin to buy"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcornerstroke"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20sp">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:spinnerMode="dropdown"
+            android:padding="2dp"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:textColorHint="@color/black" />
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/interregular"
+        android:gravity="start"
+        android:text="You will be charged"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/interregular"
+        android:gravity="start"
+        android:text="49.75"
+        android:textColor="@color/gray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/interregular"
+        android:gravity="start"
+        android:text="You new coin balance will be"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/interregular"
+        android:gravity="start"
+        android:text="30"
+        android:textColor="@color/gray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/interregular"
+        android:gravity="start"
+        android:text="These connects will expire on"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/interregular"
+        android:gravity="start"
+        android:text="March 28, 2024"
+        android:textColor="@color/gray"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvbuy"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="@color/pink"
+        android:fontFamily="@font/interregular"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="BUY NOW"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20sp"
+        android:textSize="16sp" />
+
+</LinearLayout>

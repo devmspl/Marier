@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragments.LoginPhoneNumberFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My number is"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-25dp"
+            android:gravity="center"
+            android:fontFamily="@font/interbold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_showFullName="false"
+                app:ccp_showFlag="false"
+                app:ccp_showPhoneCode="true"
+                app:ccpDialog_backgroundColor="@color/white"
+                android:background="@android:color/transparent"
+                app:ccpDialog_textColor="@color/black"
+                app:ccp_showNameCode="true"
+                app:ccp_textSize="14sp"
+                app:ccp_textGravity="LEFT"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etphonennum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:text="7009795589"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:padding="7dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/darkgrey"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="When you tap “Continue”, Dater will send a text with verification code. Message and data rates may apply. The verified phone number can be used to log in. Learn what happens when your number changes."
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/tvcontinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="@color/pink"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

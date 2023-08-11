@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="15dp"
+    android:id="@+id/linmain"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvinterset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcorner"
+        android:text="Politics"
+        android:backgroundTint="@color/pink"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:textSize="14sp"/>
+
+</LinearLayout>

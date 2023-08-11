@@ -1,0 +1,123 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    namespace 'com.app.marier'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.app.marier"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    //circleindicator
+    implementation 'me.relex:circleindicator:2.1.6'
+    //navigationgraph
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+    //COUNTRY CODE PICKER
+    implementation 'com.hbb20:ccp:2.6.1'
+    //otpview
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2-ktx' // kotlin
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+    //numerickeyboard
+    implementation 'com.konaire.numeric-keyboard:numeric-keyboard:1.2.0'
+    //tinderswipe
+    implementation 'com.github.yuyakaido:cardstackview:2.3.4'
+    //doublerangeseekbar
+    implementation 'com.github.MohammedAlaaMorsi:RangeSeekBar:1.0.6'
+    //circleimageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //gmaps
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    //retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:4.5.0"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
+// LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0"
+// Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
+    implementation 'androidx.fragment:fragment-ktx:1.4.0'
+    //okhttp
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+
+    //socket
+    implementation('io.socket:socket.io-client:2.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+//    implementation 'com.github.agorabuilder:native-full-sdk:3.4.1'
+
+    implementation 'io.agora.rtc:full-sdk:4.0.1'
+    implementation("commons-codec:commons-codec:1.9")
+    //bottomsheetgallerypicker
+    implementation 'com.kroegerama:android-kaiteki:2.9.1'
+
+    implementation project(':library')
+
+    //for AndroidX use:
+    implementation 'com.github.3llomi:RecordView:3.1.3'
+
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'com.facebook.android:facebook-android-sdk:latest.release'
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

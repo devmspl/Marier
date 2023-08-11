@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvtext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Be yourself."
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tvtext2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Upload only your own\n photos, age and bio \nthat’s yours"
+        android:background="@drawable/lessroundcornerstroke2"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

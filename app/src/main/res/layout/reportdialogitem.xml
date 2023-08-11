@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:background="@drawable/roundcornersolid"
+    android:backgroundTint="@color/white">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Report User"
+    android:textColor="@color/black"
+    android:textSize="24sp"
+    android:fontFamily="@font/intermedium"
+    android:gravity="center"
+    android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Is this person bothering you? Tell us what they did."
+        android:textColor="@color/darkgray2"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/interregular"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/lightgrey"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inappropriate photos"
+        android:textColor="@color/darkgray2"
+        android:textSize="16sp"
+        android:fontFamily="@font/interregular"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/lightgrey"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feels like spam"
+        android:textColor="@color/darkgray2"
+        android:textSize="16sp"
+        android:fontFamily="@font/interregular"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/lightgrey"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User is underage"
+        android:textColor="@color/darkgray2"
+        android:textSize="16sp"
+        android:fontFamily="@font/interregular"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/lightgrey"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:textColor="@color/darkgray2"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/interregular"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

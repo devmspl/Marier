@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomnavscreengraph"
+    app:startDestination="@id/discoveryFragment">
+
+    <fragment
+        android:id="@+id/discoveryFragment"
+        android:name="com.app.marier.fragments.DiscoveryFragment"
+        android:label="fragment_discovery"
+        tools:layout="@layout/fragment_discovery" />
+    <fragment
+        android:id="@+id/discoveryFragment2"
+        android:name="com.app.marier.fragments.DiscoveryFragment2"
+        android:label="fragment_discovery2"
+        tools:layout="@layout/fragment_discovery2" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.app.marier.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingActivity"
+            app:destination="@id/settingActivity" />
+        <action
+            android:id="@+id/action_profileFragment_to_premiumPackagesFragment22"
+            app:destination="@id/premiumPackagesFragment2" />
+    </fragment>
+    <activity
+        android:id="@+id/settingActivity"
+        android:name="com.app.marier.activities.SettingActivity" />
+    <fragment
+        android:id="@+id/likeFragment"
+        android:name="com.app.marier.fragments.LikeFragment"
+        android:label="fragment_like"
+        tools:layout="@layout/fragment_like" >
+        <action
+            android:id="@+id/action_likeFragment_to_premiumPackagesFragment22"
+            app:destination="@id/premiumPackagesFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/premiumPackagesFragment"
+        android:name="com.app.marier.fragments.PremiumPackagesFragment"
+        android:label="fragment_premium_packages"
+        tools:layout="@layout/fragment_premium_packages" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.app.marier.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/premiumPackagesFragment2"
+        android:name="com.app.marier.fragments.PremiumPackagesFragment"
+        android:label="fragment_premium_packages"
+        tools:layout="@layout/fragment_premium_packages" />
+</navigation>

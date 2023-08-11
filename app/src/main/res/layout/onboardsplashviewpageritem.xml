@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/tvmaintext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Discover people"
+    android:textColor="@color/white"
+    android:textSize="24sp"
+    android:layout_marginTop="10dp"
+    android:fontFamily="@font/intermedium"
+    android:gravity="center"/>
+    <ImageView
+        android:id="@+id/imgmain"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/mobile1"/>
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        app:ci_drawable = "@drawable/circledrawable"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/tvmaintext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find like minded people to\n connect with"
+        android:textColor="@color/darkgrey"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/interregular"
+        android:gravity="center"/>
+</LinearLayout>

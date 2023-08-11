@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.ChatDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/black" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userimage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/menssss" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Siliva"
+            android:maxWidth="80dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgphone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/phoness"
+                android:layout_marginHorizontal="10dp"/>
+            <ImageView
+                android:id="@+id/videocall"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/camera"
+                android:layout_marginHorizontal="10dp"/>
+            <ImageView
+                android:id="@+id/imgmenu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/vmenu" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="72dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/curvedbg"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgadd"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/addicon"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    />
+                <ImageView
+                    android:id="@+id/imgcamera"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/cameraicon"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/imggallery"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/imgicon"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    />
+                <RelativeLayout
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginHorizontal="2dp">
+                    <com.devlomi.record_view.RecordButton
+                        android:id="@+id/record_button"
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:scaleType="centerInside"
+                        app:mic_icon="@drawable/micicon"
+                        android:tint="@color/pink"
+                        app:scale_up_to="2.0"/>
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:src="@drawable/micicon"
+                        android:layout_gravity="center"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/etmsg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@drawable/roundcorner"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/lightgrey"
+                android:hint="Type something"
+                android:padding="15dp" />
+
+            <ImageView
+                android:id="@+id/imgsend"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sendmsges"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/circledrawable"
+                android:backgroundTint="@color/pink"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/record_view_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true">
+
+            <com.devlomi.record_view.RecordView
+                android:id="@+id/record_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                app:cancel_text="CANCEL"
+                app:cancel_text_color="#ff0000"
+                app:cancel_text_margin_right="10dp"
+                app:counter_time_color="#ff0000"
+                app:slide_to_cancel_arrow_color="@color/white"
+                app:slide_to_cancel_bounds="10dp"
+                app:slide_to_cancel_margin_right="10dp"
+                app:slide_to_cancel_text="" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>
