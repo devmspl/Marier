@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Marier</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="plans">
+        <item>10 for $2.00</item>
+        <item>20 for $3.00</item>
+        <item>40 for $6.0</item>
+        <item>80 for $12.0</item>
+        <item>100 for $15.0</item>
+    </string-array>
+
+    <string name="file_provider" translatable="false">com.kroegerama.imgpicker.demo.fileprovider</string>
+
+    <string name="pick_single">Please select your image</string>
+
+    <plurals name="pick_multi">
+        <item quantity="one">One image selected</item>
+        <item quantity="other">%1$d images selected</item>
+    </plurals>
+    <plurals name="pick_multi_more">
+        <item quantity="one">Please select one more image…</item>
+        <item quantity="other">Please select %1$d more images…</item>
+    </plurals>
+    <string name="pick_multi_limit">You have more than %1$d images selected…</string>
+    <string name="facebook_app_id">1578632842663190</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="termsncondtion">Welcome to Marier, a dating app connecting individuals looking for meaningful relationships.
+Before using our services, please carefully read and agree to the following terms and conditions:
+Acceptance of Terms</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/tvans"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/gray"
+    android:textSize="14sp"
+    android:fontFamily="@font/interregular"
+    android:text="Lorem ipsum dolor sit ame efficitur. Aenean arcu velit, vestibulum a libero vel, sollicitudin posuere dui.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis volutpat risus vitae iaculis. Duis laoreet molestie efficitur."/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/viewprofile"
+        android:icon="@drawable/user"
+        android:title="View Profile" />
+    <item
+        android:id="@+id/mutenotification"
+        android:icon="@drawable/ic_favorite"
+        android:title="Mute Notification" />
+
+    <item
+        android:id="@+id/deletehistory"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="Delete History" />
+    <item
+        android:id="@+id/blocknreport"
+        android:icon="@drawable/user"
+        android:title="Block &amp; Report" />
+</menu>

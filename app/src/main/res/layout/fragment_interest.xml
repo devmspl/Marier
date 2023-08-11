@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragments.InterestFragment">
+
+    <ImageView
+        android:id="@+id/imgback"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Interests"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let everone knows What you're passionate about by adding ti to your profile"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/interserrccyler"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/tvsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="@color/pink"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

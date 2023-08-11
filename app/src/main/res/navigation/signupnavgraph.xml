@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signupnavgraph"
+    app:startDestination="@id/signUpEmailFragment">
+
+    <fragment
+        android:id="@+id/signUpEmailFragment"
+        android:name="com.app.marier.fragments.SignUpEmailFragment"
+        android:label="fragment_sign_up_email"
+        tools:layout="@layout/fragment_sign_up_email" >
+        <argument
+            android:name="myString"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_signUpEmailFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+        <action
+            android:id="@+id/action_signUpEmailFragment_to_loginPhoneNumberFragment"
+            app:destination="@id/loginPhoneNumberFragment" />
+        <action
+            android:id="@+id/action_signUpEmailFragment_to_termsconFragment"
+            app:destination="@id/termsconFragment" />
+        <action
+            android:id="@+id/action_signUpEmailFragment_to_personalinfoFragment"
+            app:destination="@id/personalinfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginPhoneNumberFragment"
+        android:name="com.app.marier.fragments.LoginPhoneNumberFragment"
+        android:label="fragment_login_phone_number"
+        tools:layout="@layout/fragment_login_phone_number" >
+        <action
+            android:id="@+id/action_loginPhoneNumberFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/termsandcondtionFragment"
+        android:name="com.app.marier.fragments.TermsandcondtionFragment"
+        android:label="fragment_termsandcondtion"
+        tools:layout="@layout/fragment_termsandcondtion" >
+        <action
+            android:id="@+id/action_termsandcondtionFragment_to_personalinfoFragment"
+            app:destination="@id/personalinfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.app.marier.fragments.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" >
+
+        <action
+            android:id="@+id/action_otpFragment_to_termsandcondtionFragment"
+            app:destination="@id/termsandcondtionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalinfoFragment"
+        android:name="com.app.marier.fragments.PersonalinfoFragment"
+        android:label="fragment_personalinfo"
+        tools:layout="@layout/fragment_personalinfo" >
+        <action
+            android:id="@+id/action_personalinfoFragment_to_interestFragment"
+            app:destination="@id/interestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interestFragment"
+        android:name="com.app.marier.fragments.InterestFragment"
+        android:label="fragment_interest"
+        tools:layout="@layout/fragment_interest" >
+
+        <action
+            android:id="@+id/action_interestFragment_to_addphotosFragment"
+            app:destination="@id/addphotosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addphotosFragment"
+        android:name="com.app.marier.fragments.AddphotosFragment"
+        android:label="fragment_addphotos"
+        tools:layout="@layout/fragment_addphotos" />
+    <fragment
+        android:id="@+id/termsconFragment"
+        android:name="com.app.marier.fragments.TermsconFragment"
+        android:label="fragment_termscon"
+        tools:layout="@layout/fragment_termscon" />
+
+</navigation>

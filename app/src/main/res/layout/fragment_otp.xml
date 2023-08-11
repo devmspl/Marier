@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.OtpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My code is"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:fontFamily="@font/intermedium"
+            android:layout_marginLeft="-20dp"/>
+    </LinearLayout>
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/otpview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:height="40dp"
+        app:width="50dp"
+        app:otp_box_background="@drawable/linedrawable"
+        android:layout_gravity="center"
+        app:bar_enabled="false"
+        app:bar_height="2dp"
+        android:layout_marginTop="20sp"
+        app:length="4"
+        android:focusable="true"
+
+
+        app:box_margin_left="20dp"
+        android:fontFamily="@font/poppins_regular"
+        app:otp_text_size="24dp"/>
+    <EditText
+        android:id="@+id/tvedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="4"
+        android:visibility="invisible"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tvnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter the 4-digit code sent\n
+to you at +1 354 112 2376"
+        android:gravity="center"
+        android:textColor="@color/grey"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/interregular"/>
+
+    <TextView
+        android:id="@+id/tvresend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/pink"
+        android:textSize="16sp"
+        android:fontFamily="@font/interregular"
+        android:background="@drawable/roundcornerstrokepink"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="30dp"
+        >
+        <com.konaire.numerickeyboard.NumericKeyboard
+            android:id="@+id/numerickeyword"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:field="@+id/tvedittext"
+            app:keyTextColor="@color/darkgrey"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/roundcornerstroke2"
+            android:layout_marginHorizontal="15dp"/>
+        <TextView
+            android:id="@+id/tvcontinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="@color/pink"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>

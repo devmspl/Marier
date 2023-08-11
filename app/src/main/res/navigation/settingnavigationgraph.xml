@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingnavigationgraph"
+    app:startDestination="@id/settingFragment">
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.app.marier.fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_myPhotosFragment"
+            app:destination="@id/myPhotosFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_privacySettingFragment"
+            app:destination="@id/privacySettingFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_manageNotificationFragment"
+            app:destination="@id/manageNotificationFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_recentPassesFragment"
+            app:destination="@id/recentPassesFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_reeferFriendFragment"
+            app:destination="@id/reeferFriendFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_helpSupportFragment"
+            app:destination="@id/helpSupportFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_faqsFragment"
+            app:destination="@id/faqsFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_getBlockFragment"
+            app:destination="@id/getBlockFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_commingsoonFragment"
+            app:destination="@id/commingsoonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.app.marier.fragments.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.app.marier.fragments.LocationFragmentkotlin"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/myPhotosFragment"
+        android:name="com.app.marier.fragments.MyPhotosFragment"
+        android:label="fragment_my_photos"
+        tools:layout="@layout/fragment_my_photos" />
+    <fragment
+        android:id="@+id/privacySettingFragment"
+        android:name="com.app.marier.fragments.PrivacySettingFragment"
+        android:label="fragment_privacy_setting"
+        tools:layout="@layout/fragment_privacy_setting" />
+    <fragment
+        android:id="@+id/manageNotificationFragment"
+        android:name="com.app.marier.fragments.ManageNotificationFragment"
+        android:label="fragment_manage_notification"
+        tools:layout="@layout/fragment_manage_notification" />
+    <fragment
+        android:id="@+id/recentPassesFragment"
+        android:name="com.app.marier.fragments.RecentPassesFragment"
+        android:label="fragment_recent_passes"
+        tools:layout="@layout/fragment_recent_passes" />
+    <fragment
+        android:id="@+id/reeferFriendFragment"
+        android:name="com.app.marier.fragments.ReeferFriendFragment"
+        android:label="fragment_reefer_friend"
+        tools:layout="@layout/fragment_reefer_friend" />
+    <fragment
+        android:id="@+id/helpSupportFragment"
+        android:name="com.app.marier.fragments.HelpSupportFragment"
+        android:label="fragment_help_support"
+        tools:layout="@layout/fragment_help_support" />
+    <fragment
+        android:id="@+id/faqsFragment"
+        android:name="com.app.marier.fragments.FaqsFragment"
+        android:label="fragment_faqs"
+        tools:layout="@layout/fragment_faqs" />
+    <fragment
+        android:id="@+id/getBlockFragment"
+        android:name="com.app.marier.fragments.GetBlockFragment"
+        android:label="fragment_get_block"
+        tools:layout="@layout/fragment_get_block" />
+    <fragment
+        android:id="@+id/commingsoonFragment"
+        android:name="com.app.marier.fragments.CommingsoonFragment"
+        android:label="fragment_commingsoon"
+        tools:layout="@layout/fragment_commingsoon" />
+</navigation>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "473661968242",
+    "project_id": "marier-d7f6c",
+    "storage_bucket": "marier-d7f6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473661968242:android:609dae79bf9aacf5ec57eb",
+        "android_client_info": {
+          "package_name": "com.app.marier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473661968242-cv3vb6oql2d7ehjsifgdbm3brqiais7f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.marier",
+            "certificate_hash": "c02c38024b41068279a50a13d8fbec7c5c1f15b7"
+          }
+        },
+        {
+          "client_id": "473661968242-f6pk35gmm39e7sqvbaigjlmla9buns10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBpxEQ7VsrVJMOvhZTrJBUapu5bQnBSQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473661968242-f6pk35gmm39e7sqvbaigjlmla9buns10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
